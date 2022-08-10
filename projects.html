@@ -20,30 +20,51 @@
 <body>
 
   <ul>
-    <li><a class="active" href="index.html">About</a></li>
+    <li><a class="active" href="About.html">About</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="weeknotes.html">Weeknotes</a></li>
   </ul>
 
   <div class="header">
-    <h2>Side projects, at various stages of delivery from thoughts to done!</h2>
+    <h1>Side projects!</h1>
   </div>
 
         <h2>About this page</h2>
-        <p>I've worked on some side things that I've found interesting over the years. Some were just ideas that I never got aroudn to. Others are still just random thought sbubbling about in my brain that may never see the light of day. Or maybe they will.</p>
-        <p>Anyways, heres some things below.</p>
+        <p>I've worked on some side things that I've found interesting over the years. Some were ideas that made off the ground, others are still just random thoughts bubbling about in my brain that may never see the light of day. Or maybe they will.</p>
+        <p>Anyways, heres some things, click away.</p>
 
 
           <div class="row">
             <div class="leftcolumn">
-        
               <div class="card">
-                <h2> WEALL Cymru - Vote your Values!</h2>
-                <h5>Completed!</h5>
-                <img src="Images/WEAll Wales Logo_4_colour.png" alt="Wellbeing Economy Alliance Cymru logo" width="250" height="100">
-                <p>Sometime around mid-2020, as we were all still coming to terms with lockdown and what it meant I stumbled across a Twitter post from <a href="https://twitter.com/McQuadeJess">Jess McQuade</a> of WWF Cymru. Having just read the fantastic Doughnut Economics from Kate Raworth and seeing Jess was looking to get a group of people onlien to havea  chat about eh principles behind it and what it could mean in Wales I decided to pop along.   
-                </p>
-              </div>
-        
+                <button class="collapsible"> <img src="Images/WEAll Wales Logo_4_colour.png" alt="Wellbeing Economy Alliance Cymru logo" class="responsive"></button>
+                <div class="content">
+                  <p>Sometime around mid-2020, as we were all still coming to terms with lockdown and what it meant I stumbled across a Twitter post from <a href="https://twitter.com/McQuadeJess" target="_blank">Jess McQuade</a> of WWF Cymru. Having just read the fantastic Doughnut Economics from Kate Raworth and seeing Jess was looking to get a group of people online to have a chat about the principles behind it and what it could mean in Wales I decided to pop along.   
+                  </p>
+                  <p>This led me signing up to the Wellbeing Economy Alliance Cymru and meeting some fantasticly inspiring individuals.</p>
+                  <p>Late 2020 talk started to edge toward the upcoming Senedd elections. We pitched Some ideas to the room about how to get peole thinking about the notion of a wellbeing economy in Wales as they headed to the polling stations.</p>
+                  <p>A few ideas seemed to have traction, indlcuing a Yes Cymru inspired 'newspaper' drop, a series of hustings and a voting app. The newspaper drop quickly fell by the wayside, as a volutneer organisation the costs were prohibitive. The ever positve and inspiring <a href="https://twitter.com/dawnlyle" target="_blank">DawnLyle</a> took forward a <a href="https://www.youtube.com/watch?v=P8g6NQnGEoQ" target="_blank">husting</a>, with myself and <a href="https://twitter.com/StephenJP" target="_blank">Stephen Preistnall</a>taking a lead in developing an app. </p>
+                <p>Taking inspiration from the Future Generations of Wales Act, <a href="https://twitter.com/DuncanFisher" target="_blank">Duncan Fisher</a> set about creating a set of <a href="https://docs.google.com/document/d/1YuzQ9yVmVB_UwdMWm_zhxTWyr-4IvUUz/edit?usp=sharing&ouid=114911248811615998411&rtpof=true&sd=true" target="_blank">wellbeing statements</a> from organisaitons across Wales. The voting app was starting to take shape, with wireframe iterations using <a href="https://docs.google.com/presentation/d/1h2RR4w_d-qrm99TfgNZCEVRf5dtYhkojjbYUqT8KDsE/edit#slide=id.gce6e110de0_3_0" target="_blank">Google slides</a> and developing into <a href="https://whimsical.com/voting-app-wireframes-F2gr1ZMAsSFCiBi6aGBZrJ" target="_blank">Whimsical</a> as we started to make use of the <a href="https://heysavvy.com" target="_blank">Savvy</a> platform, thanks in no small part to <a href="https://twitter.com/lexonic" target="_blank">Alex</a> of the ever dependanble <a href="https://wb40podcast.com" target="_blank">WB40</a> podcast community. Eventually landing <a href="https://www.loom.com/share/889bf190cb924a078da7f3c6a938207d" target="_blank">working prototype</a>. The CMS for the app was all within <a href="https://docs.google.com/spreadsheets/d/1SloJptDz3KkBsrSRHU0JdmC6x48Zyv4IyvzqaNn3lvM/edit?usp=sharing" target="_blank">Google Sheets</a> making it a nice easy job to update content.</p>
+                  <p>After getting a quote for +£35k to use some exisitng software and deciding to go it alone, not a great idea with my coding skills, you can find an early iteration <a href="https://jovial-villani-447e21.netlify.app/awalesofcohesivecommunities" target="_blank">here</a>, I shall forever be grateful to the people, who far cleverer than I, were involved who made the whole thing possible.</p>
+                <p>We may not have got the traction and numbers we threatened to hit at one point on election eve, but feedback from people who did enage was postive, with quite a few uggesting it was going to give them something to think about at the polls, which was always the point.</p>
+                <p>You can find the final version of the app <a href="https://weall-cymru.webflow.io" target="_blank">here</a>. </p>
+                </div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 </body>
 </html>
